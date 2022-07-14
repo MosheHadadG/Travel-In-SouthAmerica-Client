@@ -1,4 +1,4 @@
-import { BrowserRouter, Redirect, Route } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import { useContext, useEffect } from 'react';
 import { appContext } from './context/appContext';
 import { getMyUser } from './APIs/ServerAPI/users.server';
@@ -19,7 +19,7 @@ import TripPage from './screens/Trip_Page/TripPage';
 import ChatPage from './screens/Chat_Page/ChatPage';
 
 import './App.css';
-import Footer from './components/Footer/Footer';
+// import Footer from './components/Footer/Footer';
 import DestinationPage from './screens/Destination_Page/DestinationPage';
 import AttractionPage from './screens/Attraction_Page/AttractionPage';
 
