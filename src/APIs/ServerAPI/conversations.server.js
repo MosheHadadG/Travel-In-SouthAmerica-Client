@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = 'https://travel-in-southamerica-api.herokuapp.com//conversation';
+const baseURL = 'https://travel-in-southamerica-api.herokuapp.com/conversation';
 
 export const getMyConversations = async (token) => {
   try {
