@@ -34,7 +34,7 @@ function App() {
     const userLoggedIn = await getMyUser(token);
     if(!userLoggedIn) return;
     setUserLoggedIn(userLoggedIn.user);
-    setSocket(io("ws://travel-in-southamerica-api.herokuapp.com"));
+    setSocket(io("ws://localhost:5050"));
     user.user = userLoggedIn.user;
     localStorage.setItem('user', JSON.stringify(user));
   } 
