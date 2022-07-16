@@ -33,7 +33,7 @@ function LoginPage({ history }) {
     const userLogged = await userLogin(formLogin);
     setSpinner(false);
     if (userLogged.error) return setErrorMsg(userLogged.error);
-    setSocket(io("https://travel-in-southamerica-api.herokuapp.com/"));
+    setSocket(io("https://travel-in-southamerica-api.herokuapp.com"));
     setToken(userLogged.token);
     setUserLoggedIn(userLogged.user);
     localStorage.setItem("user", JSON.stringify({ token: userLogged.token, user: userLogged.user }));
