@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = 'http://localhost:5050/users';
+const baseURL = 'https://travel-in-southamerica-api.herokuapp.com/users';
 
 
 export const createUser = async (newUser) => {

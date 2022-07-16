@@ -65,7 +65,7 @@ function ProfilePage(props) {
         <div className='countries-button-right-side'>
           <h4>Start: <span className='orangeColor'>{countriesPlan[0].name}</span></h4>
           <h4>End: <span className='orangeColor'>{countriesPlan[countriesPlan.length - 1].name}</span></h4>
-          <Link to={`/planning/${profile.planning._id}`}><button>Trip Page</button></Link>
+          <Link to={`/planning/${profile.planning._id}`}><button className='ui secondary button'>Trip Page</button></Link>
         </div>
       </>
     );

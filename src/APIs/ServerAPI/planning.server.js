@@ -1,5 +1,5 @@
 import axios from "axios";
-const baseURL = 'http://localhost:5050/users';
+const baseURL = 'https://travel-in-southamerica-api.herokuapp.com/users';
 
 export const updatePlanning = async (token, planningBody) => {
   try {
@@ -25,6 +25,21 @@ export const getPlanningById = async (token, planningId) => {
     });
     const planning = response.data;
     return planning;
+
+  } catch (err) {
+    return err;
+  }
+}
+
+export const deleteMyPlanning = async (token) => {
+  try {
+    const response = await axios.delete(`${baseURL}/delete-planning`, {
+      headers: {
+        'Authorization': `Bearer ${token}`
+      }
+    });
+    const userAfterRemovePlanning = response.data;
+    return userAfterRemovePlanning;
 
   } catch (err) {
     return err;

@@ -9,7 +9,7 @@ function BoardTrip({ countriesPlan }) {
     countriesPlan.forEach((country, idx) => {
       setTimeout(() => {
         setCountriesPlanDelay(prev => [...prev, country])
-      }, idx * 500)
+      }, idx * 450)
     })
 
   }, [])

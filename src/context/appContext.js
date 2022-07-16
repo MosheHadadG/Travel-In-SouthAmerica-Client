@@ -5,7 +5,7 @@ export const appContext = createContext();
 function ContextProvider({ children }) {
   const [token , setToken] = useState(null); 
   const [ userLoggedIn, setUserLoggedIn ] = useState(null);
-  const [ baseURL, setBaseURL ] = useState('http://localhost:5050');
+  const [ baseURL, setBaseURL ] = useState('https://travel-in-southamerica-api.herokuapp.com');
   const [ socket, setSocket ] = useState(null);
   const [onlineUsers, setOnlineUsers] = useState([])
   

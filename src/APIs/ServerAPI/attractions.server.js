@@ -1,5 +1,5 @@
 import axios from "axios";
-const baseURL = 'http://localhost:5050/attractions';
+const baseURL = 'https://travel-in-southamerica-api.herokuapp.com/attractions';
 
 
 export const getAttractions = async () => {

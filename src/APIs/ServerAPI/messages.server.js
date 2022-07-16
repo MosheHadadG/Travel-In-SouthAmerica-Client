@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = 'http://localhost:5050/messages';
+const baseURL = 'https://travel-in-southamerica-api.herokuapp.com/messages';
 
 export const getMessagesByConversationId = async (token, conversationId) => {
   try {
