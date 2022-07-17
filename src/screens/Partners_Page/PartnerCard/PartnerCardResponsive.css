@@ -8,14 +8,14 @@
   .ui.card {
     width: 200px;
   }
+  .MuiAvatar-root.MuiAvatar-circular.css-174orpx-MuiAvatar-root {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 @media (max-width: 425px) {
   .ui.card {
     width: 180px;
-  }
-  .MuiAvatar-root.MuiAvatar-circular.css-174orpx-MuiAvatar-root {
-    width: 150px;
-    height: 150px;
   }
 }

@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { getUserById } from '../../../APIs/ServerAPI/users.server';
 import { appContext } from '../../../context/appContext';
 import './Conversation.css'
+import './ConversationResponsive.css'
 
 function Conversation({ conversation, onlineUsers }) {
   const { token, baseURL, userLoggedIn } = useContext(appContext);

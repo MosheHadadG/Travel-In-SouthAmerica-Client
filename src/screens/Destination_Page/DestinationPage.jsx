@@ -5,6 +5,7 @@ import SliderImages from '../../components/Slider/SliderImages';
 import Spinner from '../../components/Spinner/Spinner';
 import Box from '../../components/Box/Box';
 import './DestinationPage.css'
+import './DestinationPageResponsive.css'
 
 function DestinationPage(props) {
   const [destination, setDestination] = useState([]);

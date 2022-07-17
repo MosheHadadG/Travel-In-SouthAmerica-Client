@@ -5,6 +5,7 @@ import SliderImages from '../../components/Slider/SliderImages';
 import Spinner from '../../components/Spinner/Spinner';
 // import Box from './Box/Box';
 import './AttractionPage.css'
+import './AttractionPageResponsive.css'
 
 function AttractionPage(props) {
   const [attraction, setAttraction] = useState([]);

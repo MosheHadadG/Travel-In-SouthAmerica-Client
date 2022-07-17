@@ -112,6 +112,13 @@ function ProfilePage(props) {
             </div>
 
 
+            <div className='profile-name'>
+              <h3>{`${profile.firstName} ${profile.lastName} `}</h3>
+            </div>
+            <div className='profile-age-city'>
+              <h5>{`${profile.age}, ${profile.city}`}</h5>
+            </div>
+            
             {profile._id === userLoggedIn._id ?
               <div className='profile-edit-button'>
                 <button onClick={() => setEditProfileMode(true)}
@@ -129,12 +136,6 @@ function ProfilePage(props) {
               </div>
             }
 
-            <div className='profile-name'>
-              <h3>{`${profile.firstName} ${profile.lastName} `}</h3>
-            </div>
-            <div className='profile-age-city'>
-              <h5>{`${profile.age}, ${profile.city}`}</h5>
-            </div>
             <div className='profile-bottom'>
               <TextBox title='About:' text={profile.about ?
                 (profile.about) : ("There is no about yet...")} />

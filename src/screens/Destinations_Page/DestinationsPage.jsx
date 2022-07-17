@@ -4,6 +4,7 @@ import { getDestinations } from '../../APIs/ServerAPI/destinations.server';
 import Card from '../../components/Card/Card';
 import Spinner from '../../components/Spinner/Spinner'
 import './DestinationsPage.css'
+import './DestinationsPageResponsive.css'
 
 function DestinationsPage() {
   const [destinations, setDestinations] = useState([]);

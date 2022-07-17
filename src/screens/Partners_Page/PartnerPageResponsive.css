@@ -1,5 +1,7 @@
 @media (max-width: 1300px) {
-
+  .partners-page {
+    margin-bottom: 200px;
+  }
   .partners-cards {
     grid-template-columns: repeat(4, 1fr);
   }

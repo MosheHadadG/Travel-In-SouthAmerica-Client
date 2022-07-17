@@ -1,12 +1,15 @@
 import React, { useContext, useEffect, useRef, useState } from 'react'
 import { getMyConversations } from '../../APIs/ServerAPI/conversations.server'
 import { getMessagesByConversationId, sendMessage } from '../../APIs/ServerAPI/messages.server'
+import { getUserById } from '../../APIs/ServerAPI/users.server'
 import { appContext } from '../../context/appContext'
-import './ChatPage.css'
 import Conversation from './Conversation/Conversation'
 import Message from './Message/Message'
-import { io } from "socket.io-client";
-import { getUserById } from '../../APIs/ServerAPI/users.server'
+
+import './ChatPage.css'
+import './ChatPageResponsive.css'
+
+
 
 function ChatPage() {
   const { userLoggedIn, token, socket, onlineUsers } = useContext(appContext);
@@ -150,7 +153,7 @@ function ChatPage() {
                     value={newMessage}
                   >
                   </textarea>
-                  <button className="chat-sumbit-btn" onClick={handleSubmit}>Send</button>
+                  <button className="ui secondary button" onClick={handleSubmit}>Send</button>
                 </div>
               </> : <span className='noConversationText'>Open a conversation to start a chat</span>}
         </div>

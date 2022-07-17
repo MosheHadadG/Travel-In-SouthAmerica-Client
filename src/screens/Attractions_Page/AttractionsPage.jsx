@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 import Card from '../../components/Card/Card';
 import Spinner from '../../components/Spinner/Spinner'
 import './AttractionsPage.css'
+import './AttractionsPageResponsive.css'
 
 function AttractionsPage() {
   const [attractions, setAttractions] = useState([]);
