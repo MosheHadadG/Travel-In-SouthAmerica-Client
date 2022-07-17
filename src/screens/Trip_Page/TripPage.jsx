@@ -5,6 +5,7 @@ import Spinner from '../../components/Spinner/Spinner'
 import Box from '../../components/Box/Box'
 
 import './TripPage.css'
+import './TripPageResponsive.css'
 import BoardTrip from './Board_Trip/BoardTrip'
 import { Link } from 'react-router-dom'
 

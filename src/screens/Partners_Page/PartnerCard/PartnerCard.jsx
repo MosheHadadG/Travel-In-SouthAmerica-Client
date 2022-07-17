@@ -3,6 +3,7 @@ import { Card, Icon, Image } from 'semantic-ui-react'
 import { appContext } from '../../../context/appContext';
 import Avatar from '@mui/material/Avatar';
 import './PartnerCard.css'
+import './PartnerCardResponsive.css'
 
 
 const PartnerCard = ({ user }) => {

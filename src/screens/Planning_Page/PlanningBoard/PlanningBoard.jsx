@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import routeDashedLine from "../../../images/planning-page/route-planning.png"
 import './PlanningBoard.css'
+import './PlanningBoardResponsive.css'
 
 
 

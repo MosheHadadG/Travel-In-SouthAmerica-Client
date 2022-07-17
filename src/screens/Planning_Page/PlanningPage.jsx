@@ -7,6 +7,7 @@ import { appContext } from '../../context/appContext';
 import { updatePlanning } from '../../APIs/ServerAPI/planning.server';
 
 import './PlanningPage.css'
+import './PlanningPageResponsive.css'
 
 
 function PlanningPage({ history }) {

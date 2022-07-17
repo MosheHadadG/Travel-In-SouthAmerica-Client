@@ -5,6 +5,7 @@ import SelectBoxAge from '../SelectBoxAge/SelectBoxAge';
 import { useState } from 'react';
 
 import './PartnersFilter.css'
+import './PartnersFilterResponsive.css'
 
 function PartnersFilter({setTermFilter}) {
   const [ ages, setAges ] = useState('All')

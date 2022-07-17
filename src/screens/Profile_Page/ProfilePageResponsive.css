@@ -1,0 +1,11 @@
+@media(max-width: 1250px) {
+  .profile-page-main {
+    width: 80%;
+  }
+}
+
+@media(max-width: 600px) {
+  .profile-page-main {
+    width: 90%;
+  }
+}

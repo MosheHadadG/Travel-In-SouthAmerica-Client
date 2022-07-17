@@ -1,6 +1,7 @@
 import React from 'react'
 
 import './HomePage.css'
+import './HomePageResponsive.css'
 
 function HomePage() {
   return (

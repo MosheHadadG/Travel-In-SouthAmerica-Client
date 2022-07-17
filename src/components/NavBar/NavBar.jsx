@@ -4,7 +4,7 @@ import Avatar from '@mui/material/Avatar';
 
 import { appContext } from "../../context/appContext";
 import "./NavBar.css"
-
+import "./NavBarResponsive.css"
 function NavBar() {
   const path = useLocation().pathname;
   let location = path.split("/")[1];

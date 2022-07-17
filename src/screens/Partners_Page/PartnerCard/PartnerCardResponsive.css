@@ -1,0 +1,21 @@
+@media (max-width: 550px) {
+  .ui.card {
+    width: 220px;
+  }
+}
+
+@media (max-width: 465px) {
+  .ui.card {
+    width: 200px;
+  }
+}
+
+@media (max-width: 425px) {
+  .ui.card {
+    width: 180px;
+  }
+  .MuiAvatar-root.MuiAvatar-circular.css-174orpx-MuiAvatar-root {
+    width: 150px;
+    height: 150px;
+  }
+}

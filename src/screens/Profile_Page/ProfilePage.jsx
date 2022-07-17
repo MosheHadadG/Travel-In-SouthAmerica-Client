@@ -3,13 +3,17 @@ import { Link } from 'react-router-dom'
 import Avatar from '@mui/material/Avatar';
 import { appContext } from '../../context/appContext';
 import { getUserById } from '../../APIs/ServerAPI/users.server';
+import { createConversation } from '../../APIs/ServerAPI/conversations.server';
+
 import Spinner from '../../components/Spinner/Spinner'
 import TextBox from '../../components/TextBox/TextBox'
-
-import './ProfilePage.css'
 import EditProfileBox from './Edit_Profile_Box/EditProfileBox';
 import EditAvatarBox from './Edit_Avatar_Box/EditAvatarBox';
-import { createConversation } from '../../APIs/ServerAPI/conversations.server';
+
+import './ProfilePage.css'
+import './ProfilePageResponsive.css'
+
+
 
 
 function ProfilePage(props) {

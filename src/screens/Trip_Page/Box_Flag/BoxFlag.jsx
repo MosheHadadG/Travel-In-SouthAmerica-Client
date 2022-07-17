@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import routeDashedLine from "../../../images/planning-page/route-planning.png"
 import './BoxFlag.css'
+import './BoxFlagResponsive.css'
 
 
 function BoxFlag({name, flagSrc}) {

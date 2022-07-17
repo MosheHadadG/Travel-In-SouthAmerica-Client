@@ -7,6 +7,7 @@ import PartnerCard from './PartnerCard/PartnerCard';
 import PartnersFilter from './PartnersFilter/PartnersFilter';
 
 import './PartnersPage.css'
+import './PartnerPageResponsive.css'
 
 function PartnersPage() {
   const { token } = useContext(appContext)

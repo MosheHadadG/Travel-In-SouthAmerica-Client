@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import './CountriesBox.css'
+import './CountriesBoxResponsive.css'
 import { countriesSouthAmerica } from '../countriesSouthAmerica'
 
 function CountriesBox({ handleClickedCountry, countriesPlan }) {

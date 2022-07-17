@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useEffect } from 'react'
 import BoxFlag from '../Box_Flag/BoxFlag'
 import './BoardTrip.css'
+import './BoardTripResponsive.css'
 function BoardTrip({ countriesPlan }) {
   const [countriesPlanDelay, setCountriesPlanDelay] = useState([])
 

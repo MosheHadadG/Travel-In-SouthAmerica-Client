@@ -5,6 +5,7 @@ import RegisterForm from './RegisterForm/RegisterForm'
 import Spinner from "../../components/Spinner/Spinner"
 
 import './RegisterPage.css'
+import './RegisterPageResponsive.css'
 import { appContext } from '../../context/appContext'
 
 const maleAvatar = 'uploads\\avatars\\695237a4-b9ba-4d3d-ae1b-2bc0a0af5379.jpeg'
