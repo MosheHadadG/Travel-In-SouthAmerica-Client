@@ -2,6 +2,10 @@
   .chats-page-main {
     margin-bottom: 250px;
   }
+  .chat-message-input {
+    margin-bottom: 150px;
+
+  }
 
 }
 
