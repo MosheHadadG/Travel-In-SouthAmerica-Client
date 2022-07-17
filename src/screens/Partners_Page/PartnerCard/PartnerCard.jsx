@@ -23,6 +23,7 @@ const PartnerCard = ({ user }) => {
       <Card.Content>
         <div className="partner-avatar">
           <Avatar
+            className='partnerAvatarImg'
             alt="Profile Avatar"
             src={`${baseURL}/${user.avatar}`}
             sx={{ width: 200, height: 200 }}
