@@ -58,7 +58,7 @@ function App() {
       setOnlineUsers(users)
     })
 
-  }, [socket, userLoggedIn])
+  }, [])
 
 
 
