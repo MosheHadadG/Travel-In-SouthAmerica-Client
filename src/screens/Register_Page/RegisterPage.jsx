@@ -12,7 +12,7 @@ const maleAvatar = 'uploads\\avatars\\695237a4-b9ba-4d3d-ae1b-2bc0a0af5379.jpeg'
 const femaleAvatar = 'uploads\\avatars\\d6c3c19d-709e-4a4e-aa7f-0a677f98afd7.jpeg'
 
 function RegisterPage({ history }) {
-  const { setToken, setUserLoggedIn } = useContext(appContext);
+  const { setToken, setUserLoggedIn, setSocket } = useContext(appContext);
   const [errorMsg, setErrorMsg] = useState('')
   const [spinner, setSpinner] = useState(false)
 
@@ -29,8 +29,9 @@ function RegisterPage({ history }) {
 
     if (userCreated.response && userCreated.response.status === 400)
       return setErrorMsg(userCreated.response.statusText);
-
     
+
+    setSocket(io("https://travel-in-southamerica-api.herokuapp.com"));
     const userToken = userCreated.token;
     setToken(userToken);
     setUserLoggedIn(userCreated.user);
